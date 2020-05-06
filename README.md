@@ -1,9 +1,9 @@
 # Darth Instaulous
 
-Sistema de instalação automatizado de softwares e configurações para Sistemas Operacionais Linux
+Sistema de instalação automatizado de softwares e configurações para Ubuntu.
 
 
-## Testado em
-| Sistema | Versão | Status   |
-|---------|--------|----------|
-| Ubuntu  | 19.10  | Testando |
+# Créditos
+- YAML Parser
+  - [Jonathan Peres - @jasperes / bash-yaml][https://github.com/jasperes/bash-yaml]
+  - [Piotr Kuczynski - @pkuczynski / parse_yaml.sh](https://gist.github.com/pkuczynski/8665367)
