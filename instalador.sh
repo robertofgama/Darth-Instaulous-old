@@ -44,7 +44,7 @@ clonarRepositorio(){
 
 
 ################ Principal ################
-instalar(){
+instalarDI(){
 definirCores
 
 # Verificar Requisitos
@@ -99,4 +99,4 @@ printf "$RESET"
 
 }
 
-instalar
+instalarDI
