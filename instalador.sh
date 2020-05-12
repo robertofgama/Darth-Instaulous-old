@@ -4,11 +4,11 @@ REPO=https://github.com/robertofgama/Darth-Instaulous
 LOCAL=$HOME/.darth-instaulous
 
 
-teste-requisitos() {
+testeRequisitos() {
 	command -v "$@" >/dev/null 2>&1
 }
 
-definir-cores() {
+definirCores() {
 	if [ -t 1 ]; then
 		RED=$(printf '\033[31m')
 		GREEN=$(printf '\033[32m')
@@ -26,14 +26,14 @@ definir-cores() {
 	fi
 }
 
-verificar-instalacao-existente() {
+verificarInstalacaoExistente() {
   if [[ -L $LOCAL ]]; then
     echo "${RED}Você já tem o Darth Instaulous instalado  ${RESET}"
 		exit 1
   fi
 }
 
-clonar-repositorio(){
+clonarRepositorio(){
 	echo "${RED}Clonando Repositório  ${RESET}"
 	git clone $REPO $LOCAL
 	#cd $LOCAL
@@ -45,16 +45,16 @@ clonar-repositorio(){
 
 ################ Principal ################
 instalar(){
-definir-cores
+definirCores
 
 # Verificar Requisitos
-if ! teste-requisitos git; then
+if ! testeRequisitos git; then
 	echo "${YELLOW}GIT não está instalado.${RESET} Instale o GIT e reinicie a instalação."
 	exit 1
 fi
 
-verificar-instalacao-existente
-clonar-repositorio
+verificarInstalacaoExistente
+clonarRepositorio
 
 
 printf "$RED"
