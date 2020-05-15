@@ -1,48 +1,61 @@
 anki:
-  app: anki
+  apt:
+    app: anki
 
 atom:
-  repo: ppa:webupd8team/atom
-  app: atom
+  apt:
+    repo: ppa:webupd8team/atom
+    app: atom
   plugin:
     01: terminal-plus
 
 basicos:
-  app: gcc libavcodec-extra make p7zip pinta synaptic gnome-software-plugin-flatpak chrome-gnome-shell audacious
+  apt:
+    app: gcc libavcodec-extra make p7zip pinta synaptic gnome-software-plugin-flatpak chrome-gnome-shell audacious
 
 calibre:
-  app: calibre
+  apt:
+    app: calibre
 
 dolphin:
-  repo: ppa:dolphin-emu/ppa
-  app: dolphin-emu
+  apt:
+    repo: ppa:dolphin-emu/ppa
+    app: dolphin-emu
 
 flatpak:
-  app: flatpak
+  apt:
+    app: flatpak
   flatremote:
     flathub: flathub https://flathub.org/repo/flathub.flatpakrepo
 
 neovim:
-  app: neovim
+  apt:
+    app: neovim
 
 gnomegames:
-  app: gnome-games-app
+  apt:
+    app: gnome-games-app
 
 powerline:
-  app: fonts-powerline
+  apt:
+    app: fonts-powerline
 
 retroarch:
-  repo: ppa:libretro/stable
-  key:
-    keyserver: keyserver.ubuntu.com
-    recvkeys: 18DAAE7FECA3745F
-  app: retroarch retroarch-* libretro-*
+  apt:
+    repo: ppa:libretro/stable
+    key:
+      keyserver: keyserver.ubuntu.com
+      recvkeys: 18DAAE7FECA3745F
+    app: retroarch retroarch-* libretro-*
 
 telegram:
-  repo: ppa:atareao/telegram
+  apt:
+    repo: ppa:atareao/telegram
+    app: telegram
 
 tilix:
-  app: tilix
+  apt:
+    app: tilix
   vte: sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
   conf:
     dilocal: confs/shells/tilix/tilix.dconf.dump
@@ -50,21 +63,27 @@ tilix:
     load: dconf load /com/gexperts/Tilix/ <
 
 tmux:
-  app: tmux
+  apt:
+    app: tmux
 
 transmission:
-  app: transgui transmission-daemon
-  remove: transmission-gtk
+  apt:
+    app: transgui transmission-daemon
+    remove: transmission-gtk
 
 vim:
-  app: vim
+  apt:
+    app: vim
+
+visualstudiocode:
+  snap:
+    app: code
+    parametro: --classic
 
 zsh:
-  app: zsh
+  apt:
+    app: zsh
   ohmyzsh:
     git: ADD LINK
     plugins:
       autosuggestions: git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
-
-teste:
-  01: ls -lha
