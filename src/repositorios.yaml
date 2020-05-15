@@ -32,6 +32,10 @@ neovim:
   apt:
     app: neovim
 
+nodejs:
+  apt:
+    app: nodejs npm
+
 gnomegames:
   apt:
     app: gnome-games-app

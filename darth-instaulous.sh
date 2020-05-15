@@ -1,16 +1,22 @@
 #!/usr/bin/env bash
 
-# Criação de Funções
-source funcoes/yaml.sh
+# Criação de variáveis com base no YAML
+. src/yaml.sh
+create_variables src/repositorios.yaml
 
-# Carregar base de dados
-create_variables repositorios.yaml
+# Funções
+. src/funcoes.sh
+. src/menus.sh
 
-
+# Aplicativos para Instalar
+repositorios=($telegram_apt_repo)
+aplicativos=($anki_apt_app $telegram_apt_app $nodejs_apt_app)
 
 
 case $1 in
-  -v) parse_yaml repositorios.yaml ;;
+  -i) instalarAplicativos ;;
+  -m) menu-tui ;;
   *) echo "Escolha uma opção:
-  -v) Exibe as variáveis do banco de dados" ;;
+  -i    Instala os programas
+  -m    Menu TUI";;
 esac

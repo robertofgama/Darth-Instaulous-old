@@ -97,6 +97,9 @@ cat <<-'EOF'
 EOF
 printf "$RESET"
 
+cd $LOCAL
+./darth-instaulous.sh -m
+
 }
 
 instalarDI
