@@ -9,13 +9,14 @@ create_variables src/repositorios.yaml
 . src/menus.sh
 
 # Aplicativos para Instalar
-repositorios=($telegram_apt_repo)
-aplicativos=($anki_apt_app $telegram_apt_app $nodejs_apt_app)
-
+repositorios=($telegram_apt_repositorio_ppa)
+aplicativos=($anki_apt_app $telegram_apt_app $nodejs_apt_app $neovim_apt_app)
 
 case $1 in
   -i) instalarAplicativos ;;
   -m) menu-tui ;;
+  -c) aplicarConfs ;;
+  -cs) aplicaConfsSimples ;;
   *) echo "Escolha uma opção:
   -i    Instala os programas
   -m    Menu TUI";;

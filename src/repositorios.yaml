@@ -4,8 +4,9 @@ anki:
 
 atom:
   apt:
-    repo: ppa:webupd8team/atom
     app: atom
+    repositorio:
+      ppa: ppa:webupd8team/atom
   plugin:
     01: terminal-plus
 
@@ -13,20 +14,35 @@ basicos:
   apt:
     app: gcc libavcodec-extra make p7zip pinta synaptic gnome-software-plugin-flatpak chrome-gnome-shell audacious
 
+di:
+  local:
+    di: $HOME/.darth-instaulous
+    zshrc:
+      di: confs/shells/zsh/zshrc
+      pdr: $HOME/.zshrc
+    vimrc:
+      di: confs/vim/vim/vimrc
+      pdr: $HOME/.vimrc
+    neovim:
+      di: confs/vim/
+      pdr: .confi/nvim
+
 calibre:
   apt:
     app: calibre
 
 dolphin:
   apt:
-    repo: ppa:dolphin-emu/ppa
+    repositorio:
+      ppa: ppa:dolphin-emu/ppa
     app: dolphin-emu
 
 flatpak:
   apt:
     app: flatpak
-  flatremote:
-    flathub: flathub https://flathub.org/repo/flathub.flatpakrepo
+  flatpak:
+    flatremote:
+      01: flathub https://flathub.org/repo/flathub.flatpakrepo
 
 neovim:
   apt:
@@ -42,20 +58,32 @@ gnomegames:
 
 powerline:
   apt:
-    app: fonts-powerline
+    app: powerline fonts-powerline
 
 retroarch:
   apt:
-    repo: ppa:libretro/stable
-    key:
-      keyserver: keyserver.ubuntu.com
-      recvkeys: 18DAAE7FECA3745F
     app: retroarch retroarch-* libretro-*
+    repositorio:
+      ppa: ppa:libretro/stable
+      key:
+        keyserver: keyserver.ubuntu.com
+        recvkeys: 18DAAE7FECA3745F
+
+spotify:
+  apt:
+    app: spotify-client
+  repositorio:
+    key:
+      - curl -sS https://download.spotify.com/debian/pubkey.gpg | sudo apt-key add -
+      - echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+  snap:
+    app: spotify
 
 telegram:
   apt:
-    repo: ppa:atareao/telegram
     app: telegram
+    repositorio:
+      ppa: ppa:atareao/telegram
 
 tilix:
   apt:

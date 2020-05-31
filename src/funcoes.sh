@@ -37,3 +37,28 @@ instalarAplicativos(){
   echo "${YELLOW}[+]${RED} Removendo Programas  ${RESET}"
   sudo apt remove -y  ${desinstalar[@]}
 }
+
+aplicarConfs(){
+	dataAtual=$(date +%y%m%d-%H%m%S)
+	for i in ${confsPdr[@]}; do
+		if [[ -L ${confsPdr[@]} ]]; then
+		  touch ${confsPdr[@]}
+		else
+		  if [[ -e ${confsPdr[@]} ]]; then
+				mv ${confsPdr[@]} ${confsPdr[@]}.$dataAtual
+		    ln -s $di_local_di/${confsDi[@]} ${confsPdr[@]}
+		  else
+		    ln -s $di_local_di/${confsDi[@]} ${confsPdr[@]}
+				#ln -s $di_local_di/${confsDi[@]} ~/.zshrc
+		  fi
+		fi
+	done
+
+}
+
+aplicaConfsSimples(){
+	ln -s ~/.darth-instaulous/confs/shells/zsh/zshrc ~/.zshrc
+	ln -s ~/.darth-instaulous/confs/shells/tmux/tmux.conf ~/.tmux.conf
+	ln -s ~/.darth-instaulous/confs/vim/nvim/ ~/.config/nvim
+	ln -s ~/.darth-instaulous/confs/vim/vim/vimrc ~/.vimrc
+}

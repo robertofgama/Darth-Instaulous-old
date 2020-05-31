@@ -57,3 +57,4 @@ fi
 # Aliases
 
 #source <(kubectl completion zsh)
+. /usr/local/bin/powerline/powerline/bindings/zsh/powerline.zsh
