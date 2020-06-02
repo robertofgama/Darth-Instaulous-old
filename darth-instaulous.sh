@@ -10,7 +10,7 @@ create_variables src/repositorios.yaml
 
 # Aplicativos para Instalar
 repositorios=($telegram_apt_repositorio_ppa)
-aplicativos=($anki_apt_app $telegram_apt_app $nodejs_apt_app $neovim_apt_app)
+aplicativos=($anki_apt_app $telegram_apt_app $nodejs_apt_app $neovim_apt_app $powerline_apt_app $tilix_apt_app $tmux_apt_app)
 
 case $1 in
   -i) instalarAplicativos ;;
