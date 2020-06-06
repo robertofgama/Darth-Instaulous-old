@@ -44,6 +44,13 @@ flatpak:
     flatremote:
       01: flathub https://flathub.org/repo/flathub.flatpakrepo
 
+logitech_mouse_driver:
+  apt:
+    app: ratbagd piper
+    repositorio:
+      ppa: ppa:libratbag-piper/piper-libratbag-git
+
+
 neovim:
   apt:
     app: neovim
