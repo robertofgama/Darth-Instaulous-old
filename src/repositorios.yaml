@@ -44,6 +44,12 @@ flatpak:
     flatremote:
       01: flathub https://flathub.org/repo/flathub.flatpakrepo
 
+lutris:
+  apt:
+    repositorio:
+      ppa: ppa:lutris-team/lutris
+    app: lutris
+
 neovim:
   apt:
     app: neovim
@@ -84,6 +90,10 @@ telegram:
     app: telegram
     repositorio:
       ppa: ppa:atareao/telegram
+
+terminal_programas:
+  apt:
+    app: traceroute nmap
 
 tilix:
   apt:
