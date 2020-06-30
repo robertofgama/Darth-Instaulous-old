@@ -44,6 +44,19 @@ flatpak:
     flatremote:
       01: flathub https://flathub.org/repo/flathub.flatpakrepo
 
+java8_oracle:
+  apt:
+    app: oracle-java8-installer
+    repositorio:
+      ppa: ppa:webupd8team/java
+
+java_oracle:
+  apt:
+    app: oracle-java14-installer oracle-java14-set-default
+    repositorio:
+      ppa: ppa:linuxuprising/java
+
+
 lutris:
   apt:
     repositorio:

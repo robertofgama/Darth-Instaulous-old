@@ -21,6 +21,18 @@ Os repositórios e dados de instalação e configurações estão localizados em
     - flatremote:
       - XX:
 
+```yaml
+nome_do_programa:
+  apt:
+    app:
+    repositorio:
+      ppa:
+  snap:
+    app:
+  flatpack:
+    app:
+```
+
 Darth Instaulous:
 - di
   local: Variáveis de caminhos de arquivos
