@@ -81,6 +81,12 @@ nodejs:
   apt:
     app: nodejs npm
 
+obsstudio:
+  apt:
+    app: obs-studio ffmpeg
+    repositorio:
+      ppa: ppa:obsproject/obs-studio
+
 gnomegames:
   apt:
     app: gnome-games-app
