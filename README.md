@@ -4,9 +4,18 @@ Sistema de instalação automatizado de softwares e configurações para Ubuntu.
 
 # Lista de Programas
 - Anki: Programa de Repetição Espaçada
+- Drivers do Mouse Logitech
+- JAVA: Java da Oracle v.14
+- MPV Player
+- Neo VIM
 - NodeJS: Runtime do NodeJS
+- OBS Studio
+- Powerline
 - Telegram: Aplicativo Desktop do programa de mensagens instantâneas Telegram
-
+- Terminal Programas
+- Tilix
+- Tmux
+- Transmission
 
 # Repositórios
 Os repositórios e dados de instalação e configurações estão localizados em `src/repositorios.yaml` estes dados estão organizados da seguinte forma:
