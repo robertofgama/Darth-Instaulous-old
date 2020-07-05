@@ -15,6 +15,7 @@ $nodejs_apt_app
 $neovim_apt_app
 $obsstudio_apt_app
 $powerline_apt_app
+$smplayer_apt_app
 $telegram_apt_app
 $terminal_programas_apt_app
 $tilix_apt_app

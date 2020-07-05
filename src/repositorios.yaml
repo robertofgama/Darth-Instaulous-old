@@ -104,6 +104,10 @@ retroarch:
         keyserver: keyserver.ubuntu.com
         recvkeys: 18DAAE7FECA3745F
 
+smplayer:
+  apt:
+    app: smplayer
+    
 spotify:
   apt:
     app: spotify-client
