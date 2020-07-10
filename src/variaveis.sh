@@ -2,6 +2,7 @@
 repositorios=(
 $java_oracle_apt_repositorio_ppa
 $logitech_mouse_driver_apt_repositorio_ppa
+$lutris_apt_repositorio_ppa
 $obsstudio_apt_repositorio_ppa
 $telegram_apt_repositorio_ppa
 )
@@ -10,6 +11,7 @@ aplicativos=(
 $anki_apt_app
 $java_oracle_apt_app
 $logitech_mouse_driver_apt_app
+$lutris_apt_app
 $mpv_apt_app
 $nodejs_apt_app
 $neovim_apt_app
