@@ -9,6 +9,7 @@ $telegram_apt_repositorio_ppa
 
 aplicativos=(
 $anki_apt_app
+$calibre_apt_app
 $java_oracle_apt_app
 $logitech_mouse_driver_apt_app
 $lutris_apt_app
