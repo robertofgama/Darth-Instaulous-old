@@ -12,7 +12,7 @@ atom:
 
 basicos:
   apt:
-    app: gcc libavcodec-extra make p7zip pinta synaptic gnome-software-plugin-flatpak chrome-gnome-shell audacious
+    app: gcc libavcodec-extra make p7zip pinta synaptic gnome-software-plugin-flatpak chrome-gnome-shell audacious apt-transport-https
 
 di:
   local:
@@ -156,9 +156,14 @@ virtualbox:
     repositorio:
       - sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -cs) contrib" >> /etc/apt/sources.list.d/virtualbox.list'
       - wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
-        - wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+      - wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
 
 visualstudiocode:
+  apt:
+    app: code
+    repositorio:
+      - wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add --
+      - sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
   snap:
     app: code
     parametro: --classic
