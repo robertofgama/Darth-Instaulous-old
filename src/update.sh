@@ -22,4 +22,3 @@ update_seguro (){
     fi
 
 }
-update_seguro
