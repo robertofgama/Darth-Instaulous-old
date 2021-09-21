@@ -11,6 +11,7 @@ update () {
 }
 
 update_seguro (){
+    cd $DI_LOCAL
     check_updade
     echo "Deseja Atualizar? (S/N)"
     read resposta 
@@ -20,5 +21,5 @@ update_seguro (){
     else
         echo ""
     fi
-
+    cd -
 }
