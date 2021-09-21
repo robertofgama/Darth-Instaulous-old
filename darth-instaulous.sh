@@ -1,14 +1,18 @@
 #!/usr/bin/env bash
 
+# Caminho do Aplicativo
+$DI_LOCAL=$HOME/.darth-instaulous
+
+
 # Criação de variáveis com base no YAML
-. src/yaml.sh
-create_variables src/repositorios.yaml
+. $DI_LOCAL/src/yaml.sh
+create_variables $DI_LOCAL/.darth-instaulous/src/repositorios.yaml
 
 # Funções
-. src/variaveis.sh
-. src/funcoes.sh
-. src/menus.sh
-. src/update.sh
+. $DI_LOCAL/src/variaveis.sh
+. $DI_LOCAL/src/funcoes.sh
+. $DI_LOCAL/src/menus.sh
+. $DI_LOCAL/src/update.sh
 
 
 case $1 in
