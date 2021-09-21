@@ -8,6 +8,7 @@ create_variables src/repositorios.yaml
 . src/variaveis.sh
 . src/funcoes.sh
 . src/menus.sh
+. src/update.sh
 
 
 case $1 in
@@ -15,6 +16,7 @@ case $1 in
   -m) menu-tui ;;
   -c) aplicarConfs ;;
   -cs) aplicaConfsSimples ;;
+  -up) update_seguro ;;
   *) echo "Escolha uma opção:
   -i    Instala os programas
   -m    Menu TUI";;
